@@ -1,0 +1,51 @@
+
+.header {
+	text-align: center;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+.free-badge {
+	position: relative;
+	display: inline-block;
+
+	@include bp-max-width($medium) {
+		transform: scale(.75);
+		margin: 0 auto;
+	}
+
+	@include bp-min-width($medium) {
+		position: fixed;
+		top: 30%;
+		right: 20%;
+	}
+}
+
+.free-circle {
+	animation: spin 30s linear infinite;
+}
+
+.free-text {
+	transition: transform .15s ease-in-out;
+	position: absolute;
+	top: 72px;
+	left: 59px;
+}
+
+.free-badge:hover .free-text {
+	transform: scale(1.05);
+}
+
+.ig-link {
+	position: fixed;
+	top: $base*2;
+	right: 10%;
+}

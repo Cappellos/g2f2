@@ -1,0 +1,23 @@
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+[class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-instagram,
+.icon-arrows {
+  fill: #fff;
+  width: 35px;
+}
+
+.icon-instagram {
+  height: 36px;
+}
+
+.icon-arrows {
+  height: 39px;
+}

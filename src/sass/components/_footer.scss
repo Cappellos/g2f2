@@ -1,0 +1,24 @@
+
+.footer .container {
+	padding-top: $base*2;
+}
+
+.footer ul {
+	@include font-units(18px, 24px);
+	width: 100%;
+	font-weight: $weight-bold;
+
+	@include bp-min-width($medium) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.footer li {
+	text-transform: uppercase;
+
+	@include bp-max-width($medium) {
+		margin-bottom: 12px;
+	}
+}

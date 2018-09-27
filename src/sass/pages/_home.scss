@@ -1,0 +1,28 @@
+
+.up-link {
+	position: fixed;
+	bottom: $base*2;
+	right: 10%;
+}
+
+.logo {
+	margin-bottom: 6px;
+}
+
+.subtitle span {
+	display: block;
+}
+
+.divider {
+	margin: $base 0;
+	font-weight: $weight-bold;
+}
+
+.schedule span {
+	display: inline-block;
+	width: 80px;
+
+	@include bp-min-width($medium) {
+		width: 1200px;
+	}
+}

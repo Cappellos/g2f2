@@ -1,0 +1,109 @@
+
+html,
+body {
+  background-color: $orange;
+}
+
+body {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-avocado {
+  background-image: $bg-avocado-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-avocado;
+  }
+}
+
+.bg-banana {
+  background-image: $bg-banana-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-banana;
+  }
+}
+
+.bg-coconut {
+  background-image: $bg-coconut-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-coconut;
+  }
+}
+
+.bg-egg {
+  background-image: $bg-egg-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-egg;
+  }
+}
+
+.bg-eggplant {
+  background-image: $bg-eggplant-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-eggplant;
+  }
+}
+
+.bg-kombucha {
+  background-image: $bg-kombucha-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-kombucha;
+  }
+}
+
+.bg-leaf {
+  background-image: $bg-leaf-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-leaf;
+  }
+}
+
+.bg-salmon {
+  background-image: $bg-salmon-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-salmon;
+  }
+}
+
+.bg-steak {
+  background-image: $bg-steak-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-steak;
+  }
+}
+
+.bg-yoga {
+  background-image: $bg-yoga-m;
+
+  @include bp-min-width($medium) {
+    background-image: $bg-yoga;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  @include bp-max-width($medium) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: $base;
+  }
+
+  @include bp-min-width($medium) {
+    width: 94%;
+    padding-top: $base*2;
+    padding-bottom: $base*2;
+  }
+}

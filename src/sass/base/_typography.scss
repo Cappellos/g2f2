@@ -1,0 +1,76 @@
+/**
+Class Naming Structure: block--element__modifier
+**/
+
+$sans: 'National', Helvetica, arial, sans-serif;
+
+$base: 24px;
+
+$weight-medium: 500;
+$weight-bold:   700;
+
+body {
+  font-family: $sans;
+  line-height: 1.5;
+  font-weight: $weight-medium;
+  color: #fff;
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1;
+  font-weight: $weight-bold;
+}
+
+strong, b {
+  font-weight: $weight-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  vertical-align: super;
+  font-size: .5em;
+}
+
+.title__h1 {
+  @include font-size(120px);
+
+  @include bp-min-width($medium) {
+    @include font-size(200px);
+  }
+}
+
+.title__h2 {
+  @include font-units(54px, 50px);
+
+  @include bp-min-width($medium) {
+    @include font-units(80px, 70px);
+  }
+}
+
+.title__h3 {
+  @include font-size(34px);
+
+  @include bp-min-width($medium) {
+    @include font-size(47px);
+  }
+}
+
+.section-title {
+  margin-bottom: 12px;
+}
+
+p, ul {
+  @include font-units(19px, 23px);
+  font-weight: $weight-medium;
+
+  @include bp-min-width($medium) {
+    @include font-units(26px, 32px);
+  }
+}
+
+p {
+  max-width: 650px;
+}
