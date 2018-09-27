@@ -1,6 +1,8 @@
 
 .footer .container {
+	position: relative;
 	padding-top: $base*2;
+	padding-bottom: $base*4;
 }
 
 .footer ul {
@@ -21,5 +23,16 @@
 
 	@include bp-max-width($medium) {
 		margin-bottom: 12px;
+	}
+}
+
+.bms {
+	@include font-size(10px);
+	position: absolute;
+	left: 20px;
+	bottom: 12px;
+
+	@include bp-min-width($medium) {
+		left: 0;
 	}
 }
