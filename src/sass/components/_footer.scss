@@ -7,6 +7,7 @@
 	@include font-units(18px, 24px);
 	width: 100%;
 	font-weight: $weight-bold;
+	letter-spacing: .1em;
 
 	@include bp-min-width($medium) {
 		display: flex;

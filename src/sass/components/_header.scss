@@ -14,6 +14,7 @@
 }
 
 .free-badge {
+	animation: spin 40s linear infinite;
 	position: relative;
 	display: inline-block;
 
@@ -27,10 +28,6 @@
 		top: 30%;
 		right: 20%;
 	}
-}
-
-.free-circle {
-	animation: spin 30s linear infinite;
 }
 
 .free-text {

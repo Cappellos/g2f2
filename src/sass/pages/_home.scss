@@ -1,12 +1,17 @@
 
 .up-link {
 	position: fixed;
-	bottom: $base*2;
+	bottom: $base*3;
 	right: 10%;
 }
 
 .logo {
 	margin-bottom: 6px;
+	margin-left: -4px;
+
+	@include bp-min-width($medium) {
+		margin-left: -12px;
+	}
 }
 
 .subtitle span {

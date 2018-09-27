@@ -90,6 +90,18 @@ body {
   }
 }
 
+body:before {
+  content: '';
+  width:0;
+  height:0;
+  visibility:hidden;
+  background: $bg-avocado-m, $bg-banana-m, $bg-coconut-m, $bg-egg-m, $bg-eggplant-m, $bg-kombucha-m, $bg-leaf-m, $bg-salmon-m, $bg-yoga-m;
+
+  @include bp-min-width($medium) {
+    background: $bg-avocado, $bg-banana, $bg-coconut, $bg-egg, $bg-eggplant, $bg-kombucha, $bg-leaf, $bg-salmon, $bg-yoga;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1300px;
